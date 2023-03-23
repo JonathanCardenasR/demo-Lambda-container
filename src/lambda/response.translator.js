@@ -13,7 +13,7 @@ const enviaResultadoCorrecto = (resultado,tipo,res) =>{
 const enviaResultadoError = (error,tipo,res) =>{
 
     if(tipo =='lambda'){
-        return resultado
+        return error
     }else {
         return res.status(400).json(error)
     }
