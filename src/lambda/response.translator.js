@@ -1,4 +1,4 @@
-const resultadoPosi = (resultado,tipo,res) =>{
+const enviaResultadoCorrecto = (resultado,tipo,res) =>{
     
     if(tipo =='lambda'){
 
@@ -10,17 +10,17 @@ const resultadoPosi = (resultado,tipo,res) =>{
 
 }
 
-const resultadoNega= (resultado,tipo,res) =>{
+const enviaResultadoError = (error,tipo,res) =>{
 
     if(tipo =='lambda'){
         return resultado
     }else {
-        return res.status(400).json(resultado)
+        return res.status(400).json(error)
     }
 
 }
 
 module.exports = {
-    resultadoNega,
-    resultadoPosi
+    enviaResultadoCorrecto,
+    enviaResultadoError
 }

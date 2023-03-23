@@ -24,7 +24,7 @@ const regresaFecha = async () => {
     
     try {
         
-        const fecha = new Date()
+        const fecha = "Esta es la nueva fecha " + new Date() 
         return fecha
 
     }
