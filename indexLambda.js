@@ -36,7 +36,6 @@ module.exports.handler = async (event) => {
       
     return {
         statusCode: 200,
-        headers:headers,
         body: JSON.stringify(result)
       };
     }
@@ -44,7 +43,6 @@ module.exports.handler = async (event) => {
 
       return {
         statusCode: 400,
-        headers:headers,
         body: JSON.stringify(error),
       };
 
