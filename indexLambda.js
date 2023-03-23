@@ -1,6 +1,6 @@
 const controller = require('./src/controllers/controller');
 
-module.exports.handler = async (event) => {
+module.exports.handler = async (e) => {
     
     let result 
 
@@ -13,6 +13,8 @@ module.exports.handler = async (event) => {
             params:{},
             query:{},
         }
+
+        const event = e.queryStringParameters
 
         switch (event.key) {
 
