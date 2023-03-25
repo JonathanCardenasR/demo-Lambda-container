@@ -2,10 +2,13 @@
 
 Se debe tener instalado node.js para correr la aplicación
 
-comandos para correr la aplicacion:
+## Comandos para correr la aplicacion
 
-Instalar las dependencias 
-npm i 
+1. Instalar las dependencias:
 
-correr el servidor de forma local 
-node index.js
+> npm i
+
+
+2. correr el servidor de forma local:
+
+> node index.js
